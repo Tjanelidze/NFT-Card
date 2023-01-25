@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 1px);
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit', sans-serif;
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: hsl(216, 50%, 16%);
+  width: 350px;
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
+}
+
+.info {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.etherium {
+  display: inline-block;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.author {
+  color: hsl(0, 0%, 100%);
+}
+
+.author-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.author-img {
+  width: 33px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+hr {
+  border-color: #2e405a;
+  height: 1px;
+}
+
+.clock {
+  display: inline-block;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 22px;
+}
+
+p {
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main-img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.main-img {
+  position: relative;
+}
+
+.img-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-img:hover .img-overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.527);
+}
